@@ -3,8 +3,8 @@
 body {
 	margin: 0;
 	width: 100%;
-	max-width: 1400px;
 	height: 100%;
+	background: с #E7E5E5;
 
 }
 
@@ -17,6 +17,43 @@ header {
 	margin: 0 auto;
 	width: 100%;
 	
+}
+
+
+a:link { 
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+   } 
+a:visited { text-decoration: none; } 
+a:active { text-decoration: none; }
+a:hover {
+	text-decoration: none; /* Делает ссылку подчеркнутой при наведении на нее курсора */
+    color: black; /* Цвет ссылки */
+   } 
+
+
+.contacts {
+	width: 70%;
+	margin: 0 auto;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	border: 0px solid black;
+}
+
+
+.contacts a {
+	font-size: 20px;
+	color: black;
+	display: flex;
+
+}
+
+.contacts a:hover
+
+.contacts i {
+	
+	text-align: right;
+	display: flex;	
 }
 
 .main {
@@ -47,7 +84,7 @@ h1 {
 
 #hh2 {
 	width: 80%;
-	margin: 5% 10% 0 10%;
+	margin: 1% 10% 0 10%;
 }
 
 #hh1 {
@@ -76,26 +113,32 @@ h2 {
 	color: #090000;
 }
 
+/* --- відео ---і */
+
+.video {
+	width: 80%;
+	margin: 0 auto;
+}
+
 .video-container {
 	position: relative;
-	padding-bottom: 75%;
+	padding-bottom: 56.25%;
 	padding-top: 30px;
 	height: 0;
 	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
 }
 
 .video-container iframe {
 	position: absolute;	
 	top: 0;
-	left: 10%;
-	width: 80%;
+	left: 0%;
+	width: 100%;
 	height: 100%;
 }
 
-iframe {
-	margin: 0 auto;
-	width: 300px;
-}
 
 #img1 {
 	margin: 0 10%;
@@ -119,6 +162,136 @@ h3 {
 color: #000000;
 }
 
+.variation {
+	width: 8s0%;
+	margin: 0 auto;
+}
 
+.variation table {
+	width: 100%;
+	border-collapse: collapse;
+	background: #E2E1E1;
+	font-family: arial;
+	font-size: 15px;
+	borrder: 1px solid black;
+}
+
+.variation td {
+	border: 2px solid white;
+	text-align: left;
+	padding: 5px;
+	font-weight: 100;
+}
+
+.variation th {
+	font-weight: 700;
+	border: 2px solid white;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700;900&display=swap');
+
+.width-slider {
+	
+	border: 1px solid black;
+}
+
+.own {
+	margin: 0;
+	width: 50%;
+	border: 1px solid red;
+}
+
+.slider {
+	width: 80%;
+	margin: 0 auto;
+	border: 1px solid red;
+}
+
+img {
+	width: 100%;
+}
+
+/* Слайдер */
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+	left: 0;
+	width: 5%;
+	height: 5%;
+	font-size: 3px;
+	background: blue;
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+	right: 0;
+	width: 5%;
+	height: 5%;
+	font-size: 3px;
+	background: blue;
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{
+	list-style: none;	
+}
+.slick-dots li{
+	width: 70px;
+	height: 50px;
+	background: blue;
+}
+
+.slick-dots ul {
+	height: 50px;
+	background: grey;
+}
+/* Активная точка */
+.slick-dots li.slick-active{
+	color: red;
+	background: red;
+	width: 30px;
+}
+
+.slick-dots li.slick-hover{
+	color: red;
+	background: red;
+	width: 30px;
+}
+
+/* Элемент точки */
+.slick-dots  button{
+	font-size: 30px;
+	width: 30px;
+	height: 30px
+	background-color: red;
+}
+
